@@ -1,6 +1,19 @@
 const expres = require("express");
 const router = expres.Router();
-const { registerUser } = require("../controllers/userController");
+const {
+  registerUser,
+  loginUser,
+  logoutUser,
+  getUserProfile,
+  updateProfile,
+  forgotPassword,
+  resetPassword,
+  updatePassword,
+  getAllUsers,
+  getSingleUser,
+  editUser,
+  deleteUser,
+} = require("../controllers/userController");
 const { fetchUser, authRole } = require("../middlewares/auth");
 
 router.route("/auth/register").post(registerUser);

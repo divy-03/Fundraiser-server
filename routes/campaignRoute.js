@@ -5,6 +5,7 @@ const {
   getSingleCampaign,
   createCampaign,
   updateCampaign,
+  deleteCampaign,
 } = require("../controllers/campaignController");
 const { fetchUser, authRole } = require("../middlewares/auth");
 
